@@ -1,14 +1,7 @@
-# Autograding Example: Java
-This example project is written in Java, and tested with Gradle/JUnit.
+# 4.3.3 Cats and Dogs
+1. Write some code that changes every occurrence of “cat” to “dog” in the message. This code will be more like the first program in this lesson where we replaced 1’s with l’s.
 
-### The assignment
-The tests are currently failing because of an output mismatch. Fixing the `System.out.println` in the main method will make the tests green.
+2. (Optional) add a counter to count the number of replacements and print it out on it's own line.
+3. (Optional - challenging) What if you like both cats and dogs? After you replace “cat” with “dog”, add another loop that looks for the word “dogs” and adds ” and cats” to it. Do not replace “dog”, just replace “dogs”. This will just replace the first sentence in the example below but you can add other sentences to test. For this loop, you will need to use a special version of indexOf that searches from a given index, so that you don’t end up with an infinite loop that keeps finding the first “dogs”. Make sure you add a variable fromIndex that is initialized to 0 and that is changed each time through the loop to skip over the last word that was found.
 
-### Setup command
-N/A
-
-### Run command
-`gradle test`
-
-### Notes
-- The JDK is installed on GitHub Actions machines, so you're also able to directly invoke `javac`, `java`, or any other CLI command included in the JDK. 
+- `int indexOf(String target, int fromIndex)` searches left-to-right for the target substring, but starts the search at the given fromIndex. You are not required to know this version of indexOf for the AP CS A exam, but you can use it (and any valid Java code) in the Free Response Questions.
